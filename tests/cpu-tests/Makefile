@@ -33,3 +33,8 @@ clean:
 	rm -rf Makefile.* build/
 
 latest:
+
+
+show:
+	@echo ALL      = $(ALL)
+

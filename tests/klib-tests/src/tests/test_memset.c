@@ -40,8 +40,3 @@ void test_memset() {
   }
 }
 
-int main(const char *args) {
-  test_memset();
-  
-  return 0;
-}

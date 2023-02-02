@@ -21,3 +21,8 @@ am-kernels
 └── tests                       # 一些具有针对性的测试集
     ├── am-tests                # 针对AM API实现的测试集
     └── cpu-tests               # 针对CPU指令实现的测试集
+
+
+# am-test 命令
+make ARCH=native mainargs=H run
+make ARCH=riscv64-nemu mainargs=H run

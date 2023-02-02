@@ -71,7 +71,7 @@ void video_test() {
   unsigned long last = 0;
   unsigned long fps_last = 0;
   int fps = 0;
-
+  printf("width = %d, height = %d \r\n" ,io_read(AM_GPU_CONFIG).width, io_read(AM_GPU_CONFIG).height);
   while (1) {
     unsigned long upt = io_read(AM_TIMER_UPTIME).us / 1000;
     if (upt - last > 1000 / FPS) {

@@ -6,10 +6,9 @@ static const char *names[] = {
 };
 
 void test_printf() {
-  for (int i = 0; i < 10; i ++) {
-    printf("Hello, AM World @ " __ISA__ "\n");
+  for (int i = 0; i < 101; i ++) {
+    printf("Hello, AM World @ " __ISA__ " , #%02d \n", i);
   }
   printf("Got  (kbd): %s  %s \n", names[0], names[1]);
-  printf("Got  (kbd): %s  %s %i\n", names[0], names[1], 1);
 
 }
